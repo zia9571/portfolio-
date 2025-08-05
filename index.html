@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zahra Shaikh - Data Science Portfolio</title>
-    <meta name="description" content="Fresh engineering graduate from UC Berkeley specializing in data science and machine learning. Explore my projects and experience in AI, ML, and data analysis." />
+    <meta name="description" content="Fresh engineering graduate from North-Eastern Hill University specializing in data science and machine learning. Explore my projects and experience in AI, ML, and data analysis." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -23,9 +24,12 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
             </ul>
             <div class="social-links">
-                <a href="mailto:shaikh.zahra13@email.com">✉</a>
-                <a href="https://github.com" target="_blank">⚡</a>
-                <a href="https://linkedin.com" target="_blank">💼</a>
+                <div class="social-links">
+                    <a href="mailto:shaikh.zahra13@email.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/zia9571" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/zahra-shaikh-akazasha180/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://medium.com/@shaikh.zahra13" target="_blank" title="Medium"><i class="fab fa-medium"></i></a>
+                </div>
             </div>
         </div>
     </nav>
@@ -33,18 +37,17 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <div class="hero-icon">📈</div>
             <h1 class="typewriter">
                 <span id="typewriter-text" class="typewriter-cursor"></span>
             </h1>
             <p class="hero-subtitle">I turn data into insights.</p>
             <p class="hero-description">
-                I'm a fresh engineering graduate from UC Berkeley with a passion for machine learning 
+                I'm a fresh engineering graduate from North-Eastern Hill University with a passion for machine learning 
                 and data science. I love discovering patterns in complex datasets and building 
                 intelligent systems that solve real-world problems.
             </p>
-            <a href="mailto:alex.chen@email.com" class="cta-button">
-                ✉ Say hi!
+            <a href="mailto:shaikh.zahra13@email.com" class="cta-button"><i class="fas fa-envelope"></i>
+                Say hi!
             </a>
         </div>
     </section>
@@ -58,7 +61,7 @@
                     I am currently seeking opportunities as a <span class="highlight">Data Scientist</span> 
                     or <span class="highlight">Machine Learning Engineer</span>. I recently graduated 
                     with a Bachelor's degree in <span class="cyan-highlight">Computer Science</span> from 
-                    <span class="cyan-highlight">UC Berkeley</span>.
+                    <span class="cyan-highlight">North-Eastern Hill University, India</span>.
                 </p>
                 <p class="about-text" style="margin-top: 1.5rem;">
                     Here are some technologies I have been working with:
@@ -67,20 +70,19 @@
                     <div class="skill-item">Python</div>
                     <div class="skill-item">PyTorch</div>
                     <div class="skill-item">R</div>
-                    <div class="skill-item">Scikit-learn</div>
+                    <div class="skill-item">Power BI</div>
                     <div class="skill-item">SQL</div>
                     <div class="skill-item">Pandas</div>
                     <div class="skill-item">TensorFlow</div>
                     <div class="skill-item">Docker</div>
                 </div>
                 <p class="about-text">
-                    Outside of work, I enjoy playing chess, hiking, and contributing to open-source ML projects. 
+                    Outside of work, I enjoy painting, writing, and hiking. 
                     I'm also passionate about AI ethics and fairness in machine learning.
                 </p>
             </div>
             <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" 
-                     alt="Alex Chen professional headshot">
+                <img src="profile1.png">
             </div>
         </div>
     </section>
@@ -90,46 +92,56 @@
         <h2 class="section-title"><span class="accent">/</span> experience</h2>
         <div class="experience-container">
             <div class="experience-tabs">
-                <button class="tab-button active" data-tab="berkeley">UC BERKELEY</button>
-                <button class="tab-button" data-tab="datalabs">DATA LABS INC</button>
-                <button class="tab-button" data-tab="research">RESEARCH ASSISTANT</button>
-                <button class="tab-button" data-tab="teaching">TEACHING ASSISTANT</button>
+                <button class="tab-button active" data-tab="nehu">NEHU</button>
+                <button class="tab-button" data-tab="infosys">AI AND ML INTERN</button>
+                <button class="tab-button" data-tab="research">WEB DEV INTERN
+</button>
+                <button class="tab-button" data-tab="lay">CONTENT WRITER</button>
+                <button class="tab-button" data-tab="teaching">DATA SCIENCE INTERN</button>
+                 
             </div>
             <div class="experience-content">
-                <div id="berkeley" class="experience-item active">
-                    <h3 class="experience-title">Computer Science Student @ <span class="company">UC BERKELEY</span></h3>
-                    <p class="experience-period">SEP 2020 - MAY 2024</p>
+                <div id="nehu" class="experience-item active">
+                    <h3 class="experience-title">Computer Science Student @ <span class="company">NEHU</span></h3>
+                    <p class="experience-period">AUG 2021 - AUG 2025</p>
                     <ul class="experience-highlights">
-                        <li>Completed comprehensive coursework in machine learning, data structures, algorithms, and statistical analysis with a cumulative GPA of 3.8/4.0.</li>
+                        <li>Completed comprehensive coursework in machine learning, data structures, algorithms, and statistical analysis with a cumulative GPA of 8.9/10.</li>
                         <li>Specialized in data science track with focus on deep learning, natural language processing, and computer vision applications.</li>
-                        <li>Led senior capstone project developing a real-time sentiment analysis system for social media data using transformer models.</li>
+                        <li>Led senior capstone project developing a real-time accident detection system and web extension for the visually impaired.</li>
                     </ul>
                 </div>
-                <div id="datalabs" class="experience-item">
-                    <h3 class="experience-title">Data Science Intern @ <span class="company">DATA LABS INC</span></h3>
-                    <p class="experience-period">JUN 2023 - AUG 2023</p>
+                <div id="infosys" class="experience-item">
+                    <h3 class="experience-title">AI and ML Intern @ <span class="company">Infosys</span></h3>
+                    <p class="experience-period">OCT 2024 - JAN 2025</p>
                     <ul class="experience-highlights">
-                        <li>Developed machine learning models for customer segmentation using clustering algorithms, improving marketing campaign efficiency by 25%.</li>
-                        <li>Built automated data pipelines using Python and Apache Airflow to process 100GB+ of daily transaction data.</li>
-                        <li>Created interactive dashboards using Tableau and Plotly for executive reporting and business insights.</li>
+                        <li>Developed an AI-driven virtual sales assistant using large language models (LLMs), supporting 50+ live client interactions.</li>
+                        <li>Implemented real-time speech sentiment analysis, increasing sales performance by 22%.</li>
+                        <li>Delivered 100+ post-call analytical reports to optimize customer engagement and conversion rates.</li>
                     </ul>
                 </div>
                 <div id="research" class="experience-item">
-                    <h3 class="experience-title">ML Research Assistant @ <span class="company">RESEARCH ASSISTANT</span></h3>
-                    <p class="experience-period">JAN 2023 - MAY 2024</p>
+                    <h3 class="experience-title">Web Developer Intern @ <span class="company">WEB.Com(India)</span></h3>
+                    <p class="experience-period">JUL 2024 - SEP 2024</p>
                     <ul class="experience-highlights">
-                        <li>Conducted research on federated learning algorithms under Professor Smith, focusing on privacy-preserving machine learning.</li>
-                        <li>Published paper on differential privacy in distributed ML systems at ICML 2024 workshop.</li>
-                        <li>Implemented novel algorithms in PyTorch and evaluated performance on real-world healthcare datasets.</li>
+                        <li>Re-engineered the company website using HTML/CSS, backend tools, and MySQL, enhancing site speed by 40%.</li>
+                        <li>Built an AI-based verification tool that reduced false registrations by 30%.</li>
+                        <li>Contributed to full-stack development efforts across 3+ production modules.</li>
+                    </ul>
+                </div>
+                <div id="lay" class="experience-item">
+                    <h3 class="experience-title">Junior Content Writer @ <span class="company">Spiel Times</span></h3>
+                    <p class="experience-period"> MAR 2023 - MAR 2024</p>
+                    <ul class="experience-highlights">
+                        <li>Increased website traffic by 78% through SEO strategies and data-informed content targeting </li>
+                        <li>Authored and published 350+ articles, generating over 1.8 million views.</li>
                     </ul>
                 </div>
                 <div id="teaching" class="experience-item">
-                    <h3 class="experience-title">CS 188 - Introduction to AI @ <span class="company">TEACHING ASSISTANT</span></h3>
-                    <p class="experience-period">AUG 2023 - DEC 2023</p>
+                    <h3 class="experience-title">Data Science Intern @ <span class="company">JPMorgan Chase & Co.</span></h3>
+                    <p class="experience-period">OCT 2021 - NOV 2021</p>
                     <ul class="experience-highlights">
-                        <li>Assisted 200+ students in understanding fundamental AI concepts including search algorithms, game theory, and reinforcement learning.</li>
-                        <li>Designed and graded programming assignments involving implementing AI agents and machine learning algorithms.</li>
-                        <li>Held weekly office hours and review sessions, maintaining 4.8/5.0 student evaluation rating.</li>
+                        <li>Applied internal tools to visualize stock data trends for real-time trader dashboards.</li>
+                        <li>Explored financial data representation and contributed to mock software engineering projects.</li>
                     </ul>
                 </div>
             </div>
@@ -138,21 +150,77 @@
 
     <!-- Featured Projects Section -->
     <section class="fade-in">
-        <h2 class="section-title"><span class="accent">/</span> featured projects</h2>
-        <div class="featured-project">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=600" 
-                 alt="Real-time Sentiment Analyzer" class="project-image">
-            <div class="project-overlay">
-                <h3 class="project-title">Real-time Sentiment Analyzer</h3>
-                <p class="project-description">A deep learning system that analyzes social media sentiment in real-time using BERT transformers.</p>
-                <p class="project-tech">PYTHON • PYTORCH • TRANSFORMERS • FLASK</p>
-                <div class="project-links">
-                    <a href="https://github.com">⚡</a>
-                    <a href="https://demo.com">🔗</a>
+    <h2 class="section-title"><span class="accent">/</span> featured projects</h2>
+    <div class="carousel">
+        <button class="carousel-btn prev" aria-label="Previous Project">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+    </button>
+        <div class="carousel-track">
+            <div class="featured-project active">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&h=600" 
+                     alt="Real-time Sentiment Analyzer" class="project-image">
+                <div class="project-overlay">
+                    <h3 class="project-title">Real-time Sentiment Analyzer</h3>
+                    <p class="project-description">A deep learning system that analyzes social media sentiment in real-time using BERT transformers.</p>
+                    <p class="project-tech">PYTHON • PYTORCH • TRANSFORMERS • FLASK</p>
+                    <div class="project-links">
+                        <a href="https://github.com"> <i class="fab fa-github"></i> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-project">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&h=600"
+                     alt="Customer Churn Predictor" class="project-image">
+                <div class="project-overlay">
+                    <h3 class="project-title">Customer Churn Predictor</h3>
+                    <p class="project-description">ML model to predict customer churn using ensemble methods and feature engineering.</p>
+                    <p class="project-tech">PYTHON • SCIKIT-LEARN • XGBOOST</p>
+                    <div class="project-links">
+                        <a href="https://github.com"> <i class="fab fa-github"></i> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-project">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&h=600"
+                     alt="NLP Text Summarizer" class="project-image">
+                <div class="project-overlay">
+                    <h3 class="project-title">NLP Text Summarizer</h3>
+                    <p class="project-description">Automatic text summarization tool using transformer architecture.</p>
+                    <p class="project-tech">PYTHON • TRANSFORMERS • NLTK</p>
+                    <div class="project-links">
+                        <a href="https://github.com"> <i class="fab fa-github"></i> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-project">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&h=600"
+                     alt="Time Series Forecaster" class="project-image">
+                <div class="project-overlay">
+                    <h3 class="project-title">Time Series Forecaster</h3>
+                    <p class="project-description">ARIMA and Prophet models for time series forecasting with dashboard.</p>
+                    <p class="project-tech">R • PROPHET • SHINY</p>
+                    <div class="project-links">
+                        <a href="https://github.com"> <i class="fab fa-github"></i> </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+        
+         <button class="carousel-btn next" aria-label="Next Project">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 6 15 12 9 18"/>
+      </svg>
+    </button>
+    <div class="carousel-indicators">
+      <span class="carousel-dot active"></span>
+      <span class="carousel-dot"></span>
+      <span class="carousel-dot"></span>
+      <span class="carousel-dot"></span>
+      </div>
+    </div>
+</section>
 
     <!-- Projects Grid Section -->
     <section id="projects" class="fade-in">
@@ -160,12 +228,12 @@
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-card-header">
-                    <div class="project-card-icon">📁</div>
-                    <div class="project-card-links">
-                        <a href="https://github.com">⚡</a>
-                        <a href="https://demo.com">🔗</a>
-                    </div>
-                </div>
+    <div class="project-card-icon"><i class="fas fa-folder"></i></div>
+    <div class="project-card-links">
+        <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://demo.com" target="_blank" title="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
+    </div>
+</div>
                 <h3 class="project-card-title">Customer Churn Predictor</h3>
                 <p class="project-card-description">Machine learning model to predict customer churn using ensemble methods and feature engineering techniques.</p>
                 <div class="project-tags">
@@ -177,11 +245,12 @@
 
             <div class="project-card">
                 <div class="project-card-header">
-                    <div class="project-card-icon">📁</div>
-                    <div class="project-card-links">
-                        <a href="https://github.com">⚡</a>
-                    </div>
-                </div>
+    <div class="project-card-icon"><i class="fas fa-folder"></i></div>
+    <div class="project-card-links">
+        <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://demo.com" target="_blank" title="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
+    </div>
+</div>
                 <h3 class="project-card-title">Computer Vision Classifier</h3>
                 <p class="project-card-description">CNN model for image classification with data augmentation achieving 94% accuracy on CIFAR-10 dataset.</p>
                 <div class="project-tags">
@@ -193,12 +262,12 @@
 
             <div class="project-card">
                 <div class="project-card-header">
-                    <div class="project-card-icon">📁</div>
-                    <div class="project-card-links">
-                        <a href="https://github.com">⚡</a>
-                        <a href="https://demo.com">🔗</a>
-                    </div>
-                </div>
+    <div class="project-card-icon"><i class="fas fa-folder"></i></div>
+    <div class="project-card-links">
+        <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://demo.com" target="_blank" title="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
+    </div>
+</div>
                 <h3 class="project-card-title">NLP Text Summarizer</h3>
                 <p class="project-card-description">Automatic text summarization tool using transformer architecture with ROUGE score evaluation metrics.</p>
                 <div class="project-tags">
@@ -210,11 +279,12 @@
 
             <div class="project-card">
                 <div class="project-card-header">
-                    <div class="project-card-icon">📁</div>
-                    <div class="project-card-links">
-                        <a href="https://github.com">⚡</a>
-                    </div>
-                </div>
+    <div class="project-card-icon"><i class="fas fa-folder"></i></div>
+    <div class="project-card-links">
+        <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://demo.com" target="_blank" title="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
+    </div>
+</div>
                 <h3 class="project-card-title">Time Series Forecaster</h3>
                 <p class="project-card-description">ARIMA and Prophet models for time series forecasting with interactive visualization dashboard.</p>
                 <div class="project-tags">
@@ -226,12 +296,12 @@
 
             <div class="project-card">
                 <div class="project-card-header">
-                    <div class="project-card-icon">📁</div>
-                    <div class="project-card-links">
-                        <a href="https://github.com">⚡</a>
-                        <a href="https://demo.com">🔗</a>
-                    </div>
-                </div>
+    <div class="project-card-icon"><i class="fas fa-folder"></i></div>
+    <div class="project-card-links">
+        <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://demo.com" target="_blank" title="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
+    </div>
+</div>
                 <h3 class="project-card-title">Recommendation Engine</h3>
                 <p class="project-card-description">Collaborative filtering recommendation system using matrix factorization and deep learning approaches.</p>
                 <div class="project-tags">
@@ -243,11 +313,12 @@
 
             <div class="project-card">
                 <div class="project-card-header">
-                    <div class="project-card-icon">📁</div>
-                    <div class="project-card-links">
-                        <a href="https://github.com">⚡</a>
-                    </div>
-                </div>
+    <div class="project-card-icon"><i class="fas fa-folder"></i></div>
+    <div class="project-card-links">
+        <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://demo.com" target="_blank" title="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
+    </div>
+</div>
                 <h3 class="project-card-title">Data Pipeline Automation</h3>
                 <p class="project-card-description">Automated ETL pipeline for processing large datasets with monitoring and error handling capabilities.</p>
                 <div class="project-tags">
@@ -261,7 +332,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>Built and designed by Zahra Shaikh.</p>
+        <p>Built by Zahra Shaikh.</p>
         <p style="font-size: 0.875rem; margin-top: 0.5rem;">All rights reserved © 2025</p>
     </footer>
     <script src="script.js"></script>
