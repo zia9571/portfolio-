@@ -119,3 +119,63 @@
             }
         `;
         document.head.appendChild(style);
+// Carousel functionality for featured projects
+document.addEventListener('DOMContentLoaded', function () {
+    const projects = document.querySelectorAll('.featured-project');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    const dots = document.querySelectorAll('.carousel-dot');
+    let current = 0;
+    let intervalId;
+
+    function showProject(idx) {
+        projects.forEach((proj, i) => {
+            proj.classList.toggle('active', i === idx);
+        });
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === idx);
+        });
+    }
+
+    function nextProject() {
+        current = (current + 1) % projects.length;
+        showProject(current);
+    }
+
+    function prevProject() {
+        current = (current - 1 + projects.length) % projects.length;
+        showProject(current);
+    }
+
+    function startAutoplay() {
+        intervalId = setInterval(nextProject, 4000); // 4 seconds
+    }
+
+    function stopAutoplay() {
+        clearInterval(intervalId);
+    }
+
+    prevBtn.addEventListener('click', () => {
+        prevProject();
+        stopAutoplay();
+        startAutoplay();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        nextProject();
+        stopAutoplay();
+        startAutoplay();
+    });
+
+    dots.forEach((dot, idx) => {
+        dot.addEventListener('click', () => {
+            current = idx;
+            showProject(current);
+            stopAutoplay();
+            startAutoplay();
+        });
+    });
+
+    showProject(current);
+    startAutoplay();
+});
