@@ -15,24 +15,37 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="nav-container">
-            <a href="#home" class="logo">Zahra Shaikh</a>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-            </ul>
-            <div class="social-links">
-                <div class="social-links">
-                    <a href="mailto:shaikh.zahra13@email.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/zia9571" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/zahra-shaikh-akazasha180/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://medium.com/@shaikh.zahra13" target="_blank" title="Medium"><i class="fab fa-medium"></i></a>
-                </div>
-            </div>
+  <div class="nav-container">
+    <a href="#home" class="logo">Zahra Shaikh</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <!-- Social links for mobile hamburger -->
+      <li class="mobile-social-links">
+        <div class="social-links">
+          <a href="mailto:shaikh.zahra13@email.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/zia9571" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/zahra-shaikh-akazasha180/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://medium.com/@shaikh.zahra13" target="_blank" title="Medium"><i class="fab fa-medium"></i></a>
         </div>
-    </nav>
+      </li>
+    </ul>
+    <!-- Social links for desktop -->
+    <div class="social-links desktop-social-links">
+      <a href="mailto:shaikh.zahra13@email.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/zia9571" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/zahra-shaikh-akazasha180/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://medium.com/@shaikh.zahra13" target="_blank" title="Medium"><i class="fab fa-medium"></i></a>
+    </div>
+  </div>
+</nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
