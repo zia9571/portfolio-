@@ -1,7 +1,7 @@
 :root {
     --navy: #1a1a2e;
     --navy-light: #2d2d4a;
-    --cyan: #00ffff;
+    --cyan: #d0e6fd;;
     --green: #ffffff;
     --gray-text: #8892b0;
     --white: #ffffff;
@@ -817,3 +817,4 @@ footer {
     display: block;
   }
 }
+
