@@ -438,7 +438,7 @@ section {
 }
 
 .carousel-btn:hover, .carousel-btn:focus {
-    background: #00fff7;
+    background: #d0e6fd;
     color: #17223b;
 }
 
@@ -473,7 +473,7 @@ section {
     transition: background 0.3s, opacity 0.3s;
 }
 .carousel-dot.active {
-    background: #00fff7;
+    background: #d0e6fd;
     opacity: 1;
 }
 
@@ -817,4 +817,5 @@ footer {
     display: block;
   }
 }
+
 
